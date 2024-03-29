@@ -73,11 +73,11 @@ This can be calculated by using the formula:
 The Synthesis Report are found in the directory
 
 ```bash
-
+   ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/29-03_15-37/reports/synthesis/1-yosys_4.stat.rpt
 ```
 
 The synthesis Results are found in the directory
 
 ```bash
-
+   ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/29-03_15-37/results/synthesis/picorv32a.synthesis.v
 ```

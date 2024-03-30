@@ -93,9 +93,9 @@ After the Synthesis process, type the command for running the Floor planning
 
 The configuration files are inside the location
 ```bash
-  
+  /Desktop/work/tools/openlane_working_dir/openlane/configurations/README.md
 ```
-
+To run floorplan
 ```bash
   run_floorplan
 ```
@@ -125,12 +125,13 @@ In this particular location from the floorplan.def file, we can able to see the 
 Open this directory to initiate the Magic Tool
 ![magic location](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/5079d8cd-f95b-4776-a4aa-83dc5f4722f3)
 
+Locate to this directory
 ```bash
-  
+  ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/29-03_15-37/results/floorplan
 ```
 
 ```bash
- 
+ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
 - Floorplan def in Magic
 ![magic opening](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/c8336e8f-68d8-45f6-a46a-428b21e6a19b)
@@ -158,7 +159,7 @@ Commands to load placement def in magic
 ![placement location](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/433d133e-f0a8-45f9-8a95-eaaf79077762)
 
 ```bash
-    
+    magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
 - Floorplan def in magic
 

@@ -1,7 +1,7 @@
 
 # Digital-Soc-Design
 
-## Day 1
+# Day 1
 The LAB for day 1 gives the complete flow about using the SKYWATER 130nm PDK, Openlane EDA
 
 ## Open the working Directory
@@ -35,6 +35,7 @@ To prepare the openlane,
   package require openlane 0.9
   prep - design picorv32a
 ```
+## Synthesis
 To run the Synthesis
 ```bash
  run_synthesis
@@ -81,3 +82,91 @@ The synthesis Results are found in the directory
 ```bash
    ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/29-03_15-37/results/synthesis/picorv32a.synthesis.v
 ```
+
+# Day 2
+
+## Floorplanning
+The LAB for day 2 gives the complete flow of the Floorplanning and the placement process
+
+After the Synthesis process, type the command for running the Floor planning
+![configuration directory](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/9deff139-100d-46e8-bd5a-299aed36ec33)
+
+The configuration files are inside the location
+```bash
+  
+```
+
+```bash
+  run_floorplan
+```
+we will be getting a success message like this
+![floorplan_success](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/3e474461-9d16-4e7b-a702-0b0836335026)
+
+In this particular location from the floorplan.def file, we can able to see the area of the chip
+![area](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/2311ce1a-dc24-4094-b6a9-c2adf3df642d)
+
+
+             1000 unit distance = 1 Micron
+
+             Distance in micron = value
+                                ----------
+                                   1000
+
+            Die width in micron = 660685 
+                                 ---------
+                                   1000
+                                
+           Die height in micron =  671405 
+                                  ---------
+                                    1000
+
+          Area of die in micron = 660.685*671.405 Square micron 
+
+Open this directory to initiate the Magic Tool
+![magic location](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/5079d8cd-f95b-4776-a4aa-83dc5f4722f3)
+
+```bash
+  
+```
+
+```bash
+ 
+```
+- Floorplan def in Magic
+![magic opening](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/c8336e8f-68d8-45f6-a46a-428b21e6a19b)
+
+
+
+- Horizontal metal layer
+![horizontal metal layer](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/8bc0e87d-fb4d-41c9-9d48-373f1ba65d4e)
+
+
+- Vertical metal layer
+![vertical metal layer](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/dc0da0f0-9cd7-49a5-a5a7-9dbcf22a91df)
+
+- Standard cells
+![standard cells](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/f388ecb6-ed25-4814-bc2e-37fe628ad201)
+
+## Placement
+To run the Placement, the command is
+![run placement](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/1c2cf0a3-7b9d-4f59-9ad0-2eea22a6f466)
+
+```bash
+    run_placement
+```
+Commands to load placement def in magic
+![placement location](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/433d133e-f0a8-45f9-8a95-eaaf79077762)
+
+```bash
+    
+```
+- Floorplan def in magic
+
+![placement chip](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/2b8c7816-ecd2-4977-b9ab-3d4d27b021b2)
+
+- Standard cell placement
+
+![placement of standard cells](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/34c89e7c-60b0-4c62-a0c2-239ab8587e28)
+
+
+

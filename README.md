@@ -177,24 +177,24 @@ The LAB for the day  gives the complete flow of the Inverter simulation using ng
 
 Go to this directory to git clone the files
 ```bash
-  
+  /Desktop/work/tools/openlane_working_dir/openlane
 ```
 Git clone the files from GitHub to your local pc
 ```bash
-  
+  git clone https://github.com/nickson-jose/vsdstdcelldesign.git
 ```
 ![sky130 tech file](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/4970aa6b-c2e3-4a31-900d-8f7c3208640f)
 
 open another terminal and go to the location
 ```bash
-  
+  /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic
 ```
 copy the sky130A.tech file from this location to the git cloned location.
 ![copying tech files in git cloned file](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/220b4d3a-5c6e-482c-a01c-d602feefb34a)
 
 Now initialize magic
 ```bash
-  
+  magic -T sky130A.tech sky130_inv.mag &
 ```
 ![initilaize magic](https://github.com/SANGESH007/Digital-Soc-Design/assets/77070030/8651d7dc-79e8-4b83-8a33-c3ab7830925d)
 
